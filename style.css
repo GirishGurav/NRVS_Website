@@ -724,7 +724,10 @@ main.row {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
+.text-one a{
+  color: #000000;
+  font-weight: 500;
+}
 @media (max-width: 950px) {
   .container5 {
       width: 90%;
