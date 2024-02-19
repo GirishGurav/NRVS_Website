@@ -284,11 +284,16 @@ h2 {
     font-size: 1.2rem;
   }
 
-  .hero-name {
-    font-size: 1.3rem;
+  .hero-info h1{
+    font-size: 35px;
+  }
+  .hero-name{
+    font-size: 27px;
     font-weight: bold;
   }
-
+  .pp{
+    font-size: 25px;
+  }
 }
 
 /* About End  */
@@ -348,6 +353,10 @@ h2 {
   .service-info ul li {
     margin-left: 20px;
     font-size: 1.2rem;
+  }
+
+  .service-info,.service-description h2 h3{
+    font-size: 15px;
   }
 }
 
@@ -433,6 +442,10 @@ main.row {
   .row .col:nth-child(2) {
     margin-top: 30px;
   }
+
+  .col header.title h2{
+    font-size: 30px;
+  }
 }
 
 /* Education End */
@@ -444,7 +457,9 @@ main.row {
   justify-content: space-around;
   padding: 20px;
 }
-
+.heading h2{
+  text-align: center;
+}
 .achievement {
   width: 300px;
   background-color: #000000a2;
@@ -462,6 +477,9 @@ main.row {
 @media (max-width: 768px) {
   .achievement {
     width: 100%;
+  }
+  .heading h2{
+    font-size: 25px;
   }
 }
 
@@ -532,6 +550,9 @@ main.row {
   .columns-container {
     display: inline;
   }
+  .core-info h2{
+    font-size: 25px;
+  }
 }
 
 /* Core End  */
@@ -584,6 +605,9 @@ main.row {
 @media (max-width:768px) {
   .container3 {
     padding: 20px;
+  }
+  .container3 .heading{
+    font-size: 20px;
   }
 }
 /* Card End  */
