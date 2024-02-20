@@ -51,12 +51,15 @@
   justify-content: space-between;
 }
 
-.navbar .logo a {
-  color: #fff;
-  font-size: 30px;
-  font-weight: 600;
-  text-decoration: none;
+.logo img {
+  width: 90px;
+  margin-right: 10px;
 }
+
+.logo {
+  flex: 1;
+}
+
 
 .navbar .menu-list {
   display: inline-flex;
