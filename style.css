@@ -469,16 +469,16 @@ main.row {
 }
 
 .achievement {
-  width: 300px;
+  width: 100%;
   background-color: #000000a2;
   margin: 10px;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 
-.achievement p {
+
+.achievement {
   color: #f1f1f1;
 }
 
@@ -531,7 +531,9 @@ main.row {
   max-width: 48%;
 }
 
-
+.core-description{
+  color: #000000;
+}
 @media (max-width: 768px) {
   .core-section {
     padding: 20px;
