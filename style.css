@@ -802,4 +802,20 @@ main.row {
   .w3-center{
     font-size: 15px;
   }
+}
 /* Image Slider End*/
+
+.yt{
+  text-align: center;
+}
+iframe{
+  width: 50%;
+  height: 500px;
+}
+
+@media (max-width:768px) {
+  iframe{
+    width: 90%;
+    height: 250px;
+  }
+}
