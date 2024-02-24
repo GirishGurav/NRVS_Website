@@ -445,10 +445,13 @@
                 <form action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="4be5c08c-84d5-4a2e-86d1-4c2d2f3a94f3">
                     <div class="input-box">
-                        <input name="name" type="text" placeholder="Enter your name">
+                        <input name="name" type="text" placeholder="Enter your Name" required>
                     </div>
                     <div class="input-box">
-                        <input name="email" type="text" placeholder="Enter your email">
+                        <input name="email" type="text" placeholder="Enter your Email" required>
+                    </div>
+                    <div class="input-box">
+                        <input name="Mobile No." type="tel" pattern="[7-9]{1}[0-9]{9}" placeholder="Enter your Mobile No." required>
                     </div>
                     <div class="input-box message-box">
                         <textarea name="message" id="" placeholder="Enter Message" cols="30" rows="10"></textarea>
