@@ -326,15 +326,38 @@
     <!--Core A-->
     <hr>
     <!--Image Slider-->
+    <h2 class="w3-center">Workshop on "Successful Parenting and Career Guidance" conducted on 06/04/2024 at Late
+        Dilipsinh Yadav Vidhyalaya,Pethvadgaon.</h2>
+    <p class="w3-center" id="p">On the Occasion of Rangotsav Drawing competition Program at SAMARPAN innovative School( CBSE proposed),
+        Petvadagaon. Lecture on "Importance of CBSE school and NCERT curriculum" to parents and students on 28/04/2024.
+        Winner students of Drawing competition were awarded with Trophies, Cash prizes and Certificates at the hands of
+        school authorities.</p>
+
+    <div class="w3-content w3-section" style="max-width:800px">
+        <img class="mySlides2" src="/workshopimg/w1.jpg" style="width:100%">
+        <img class="mySlides2" src="/workshopimg/w2.jpg" style="width:100%">
+        <img class="mySlides2" src="/workshopimg/w3.jpg" style="width:100%">
+        <img class="mySlides2" src="/workshopimg/w4.jpg" style="width:100%">
+        <img class="mySlides2" src="/workshopimg/w5.jpg" style="width:100%">
+        <img class="mySlides2" src="/workshopimg/w6.jpg" style="width:100%">
+        <img class="mySlides2" src="/workshopimg/w7.jpg" style="width:100%">
+        <img class="mySlides2" src="/workshopimg/w8.jpg" style="width:100%">
+        <img class="mySlides2" src="/workshopimg/w9.jpg" style="width:100%">
+        <img class="mySlides2" src="/workshopimg/w10.jpg" style="width:100%">
+    </div>
+    <br>
+    <hr>
+
+
     <h2 class="w3-center">Workshop on "Successful Parenting" conducted on 4th July 2022 at Sane Guruji Vasahat School,
         Kolhapur</h2>
 
     <div class="w3-content w3-section" style="max-width:800px">
-        <img class="mySlides" src="I1.jpeg" style="width:100%">
-        <img class="mySlides" src="I2.jpeg" style="width:100%">
-        <img class="mySlides" src="I3.jpeg" style="width:100%">
-        <img class="mySlides" src="I4.jpeg" style="width:100%">
-        <img class="mySlides" src="I5.jpeg" style="width:100%">
+        <img class="mySlides1" src="/workshopimg/I1.jpeg" style="width:100%">
+        <img class="mySlides1" src="/workshopimg/I2.jpeg" style="width:100%">
+        <img class="mySlides1" src="/workshopimg/I3.jpeg" style="width:100%">
+        <img class="mySlides1" src="/workshopimg/I4.jpeg" style="width:100%">
+        <img class="mySlides1" src="/workshopimg/I5.jpeg" style="width:100%">
     </div>
     <!--Image Slider End-->
     <br>
@@ -451,7 +474,8 @@
                         <input name="email" type="text" placeholder="Enter your Email" required>
                     </div>
                     <div class="input-box">
-                        <input name="Mobile No." type="tel" pattern="[7-9]{1}[0-9]{9}" placeholder="Enter your Mobile No." required>
+                        <input name="Mobile No." type="tel" pattern="[7-9]{1}[0-9]{9}"
+                            placeholder="Enter your Mobile No." required>
                     </div>
                     <div class="input-box message-box">
                         <textarea name="message" id="" placeholder="Enter Message" cols="30" rows="10"></textarea>
@@ -482,22 +506,38 @@
             this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
         }
 
-        var myIndex = 0;
-        carousel();
+        var slideIndex1 = 0;
+        var slideIndex2 = 0;
 
-        function carousel() {
+        carousel1();
+        carousel2();
+
+        function carousel1() {
             var i;
-            var x = document.getElementsByClassName("mySlides");
+            var x = document.getElementsByClassName("mySlides1");
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
-            myIndex++;
-            if (myIndex > x.length) { myIndex = 1 }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 2000); // Change image every 2 seconds
+            slideIndex1++;
+            if (slideIndex1 > x.length) { slideIndex1 = 1 }
+            x[slideIndex1 - 1].style.display = "block";
+            setTimeout(carousel1, 2000); // Change image every 2 seconds
+        }
+
+        function carousel2() {
+            var i;
+            var x = document.getElementsByClassName("mySlides2");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex2++;
+            if (slideIndex2 > x.length) { slideIndex2 = 1 }
+            x[slideIndex2 - 1].style.display = "block";
+            setTimeout(carousel2, 2000); // Change image every 2 seconds
         }
 
     </script>
+
 </body>
 
 </html>
